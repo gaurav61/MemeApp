@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.example.android.memeapp.MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter top meme text"
+        android:id="@+id/editTop"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter bottom meme text"
+        android:id="@+id/editBottom"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Image"
+        android:onClick="addImage"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRY"
+        android:onClick="tryMeme"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/lay"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/memeImage"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meme top text"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:id="@+id/memeTopText"
+            android:textColor="#FFFFFF"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meme bottom text"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:id="@+id/memeBottomText"
+            android:layout_alignParentBottom="true"
+            android:textColor="#FFFFFF"
+            />
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="saveImage"
+        />
+</LinearLayout>
