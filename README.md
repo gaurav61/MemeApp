@@ -6,3 +6,5 @@ A simple meme generator app.
 
 ## Run
 Generate the APK file in Android studio and run it on the phone.
+
+![ScreenShot](Screenshot_20171024-111653.png)
